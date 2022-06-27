@@ -1,0 +1,95 @@
+.search {
+    margin-bottom: 90px;
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 26px;
+    }
+
+    &-key {
+        .search-input {
+            width: 672px;
+            height: 51px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 8px 16px;
+            border: none;
+            background: white;
+            border-radius: 8px;
+            backdrop-filter: blur(4px);
+        }
+
+        .search-input:focus-visible {
+            // border: none;
+            outline: none;
+        }
+    }
+
+    &-location {
+        #location {
+            border-radius: 8px;
+            height: 50px;
+            width: 271px;
+            background: #FFFFFF;
+            backdrop-filter: blur(4px);
+            border: none;
+            padding: 0 32px 0 44px;
+        }
+
+        #location:focus-visible {
+            outline: none;
+        }
+
+        select {
+
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+            background: white url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat 90% 50% !important;
+
+        }
+
+        /*for IE10+*/
+        select::-ms-expand {
+            padding: 80px;
+        }
+
+        #location>option {
+            outline: none;
+
+            height: 50px;
+            border-radius: 8px;
+
+        }
+    }
+}
+
+.category {
+    &-container {
+        display: flex;
+        align-items: center;
+    }
+
+    &-title {
+        margin-right: 20px;
+    }
+
+    &-list {
+        display: flex;
+        gap: 0 16px;
+
+    }
+
+    &-tag {
+        padding: 4px 8px;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+
+        a {
+            color: #021A84;
+        }
+    }
+}

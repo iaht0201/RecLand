@@ -1,0 +1,39 @@
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: $font;
+    background: #E5E5E5;
+    font-weight: 400;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 149px;
+    height: 44px;
+    padding: 8px 16px;
+
+    border-radius: 8px;
+
+    &--primary {
+        background: #021A84;
+        color: white;
+    }
+
+    &--rounded {
+        border: 1px solid #021A84;
+        color: $primary-color;
+        background: transparent;
+    }
+}

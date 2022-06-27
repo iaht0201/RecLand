@@ -1,0 +1,44 @@
+.header {
+    // background-color: $heading-bg;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 80px;
+
+    }
+
+    &-job {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    &-auth {
+        cursor: pointer;
+        align-items: center;
+        display: flex;
+        gap: 0 14px;
+        color: $text-color-black;
+    }
+
+    .button--rounded {
+        margin-right: 14px;
+        position: relative;
+    }
+
+    .button--rounded::after {
+        content: "";
+        border: 1px solid #999999;
+        // transform: rotate(90deg);
+        height: 15px;
+        right: -14px;
+        position: absolute;
+
+    }
+}

@@ -1,0 +1,804 @@
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Recland</title>
+        <link rel="stylesheet" href="./css/app.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Enriqueta&family=Inter:wght@400;500;700&display=swap"
+            rel="stylesheet">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        <link rel="stylesheet"
+            href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="header">
+                    <div class="container">
+                        <div class="header-container">
+                            <div class="header-logo">
+                                <img srcset="./assets/logo.png 2x" alt="logo">
+                            </div>
+                            <div class="header-auth">
+                                <div class="header-job">
+                                    <a href="/job"> Tất cả các job</a>
+                                </div>
+                                <div class="header-register button
+                                    button--rounded">
+                                    Đăng ký
+                                </div>
+                                <div class="header-login button
+                                    button--primary">
+                                    Đăng nhập
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+            <main>
+                <section class="banner">
+                    <img srcset="./assets/anner.png 2x" alt="banner">
+                </section>
+                <section class="search">
+                    <div class="container">
+                        <div class="search-container">
+                            <div class="search-key">
+                                <input type="text" class="search-input"
+                                    placeholder="Nhập vị trí hoặc từ khóa ...">
+                            </div>
+                            <div class="search-location">
+                                <select name="location" id="location">
+                                    <option value="">Chọn địa điểm</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="hcm">Hồ Chí Minh</option>
+                                    <option value="hue">Huế</option>
+                                </select>
+                            </div>
+                            <div class="search-button button button--primary">
+                                Tìm kiếm
+                            </div>
+                        </div>
+                        <div class="category-container">
+                            <div class="category-title">
+                                Đề xuất:
+                            </div>
+                            <ul class="category-list">
+                                <li class="category-tag">
+                                    <a href="#" class="category-link">
+                                        Reactjs
+                                    </a>
+                                </li>
+                                <li class="category-tag">
+                                    <a href="#" class="category-link">
+                                        Reactjs
+                                    </a>
+                                </li>
+                                <li class="category-tag">
+                                    <a href="#" class="category-link">
+                                        Reactjs
+                                    </a>
+                                </li>
+                                <li class="category-tag">
+                                    <a href="#" class="category-link">
+                                        Reactjs
+                                    </a>
+                                </li>
+                                <li class="category-tag">
+                                    <a href="#" class="category-link">
+                                        Reactjs
+                                    </a>
+                                </li>
+                                <li class="category-tag">
+                                    <a href="#" class="category-link">
+                                        Reactjs
+                                    </a>
+                                </li>
+                                <li class="category-tag">
+                                    <a href="#" class="category-link">
+                                        Reactjs
+                                    </a>
+                                </li>
+                                <li class="category-tag">
+                                    <a href="#" class="category-link">
+                                        Reactjs
+                                    </a>
+                                </li>
+                                <li class="category-tag">
+                                    <a href="#" class="category-link">
+                                        Reactjs
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="job">
+                    <div class="container">
+                        <div class="job-container">
+                            <div class="job-header">
+                                <div class="job-image">
+                                    <img srcset="./assets/heart_crop.png 2x"
+                                        alt="">
+                                </div>
+                                <h2 class="job-title">
+                                    Jobs tốt nhất
+                                </h2>
+                            </div>
+                            <div class="job-main">
+                                <ul class="job-lists">
+                                    <li class="job-item">
+                                        <div class="job-item-container
+                                            job-item-disable">
+                                            <div class="job-item-header">
+                                                <div class="job-item-brand">
+                                                    <div class="job-item-image">
+                                                        <img
+                                                            src="./assets/logow.png"
+                                                            alt="">
+                                                    </div>
+                                                    <h3 class="job-item-name">
+                                                        Data Engineer
+                                                    </h3>
+                                                </div>
+                                                <div class="job-item-time">
+                                                    Part time
+                                                </div>
+                                            </div>
+
+                                            <div class="job-item-main">
+                                                <div class="job-item-profit">
+                                                    <h5
+                                                        class="job-item-profit-title">
+                                                        Hoa hồng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-profit-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div
+                                                        class="job-item-profit-lists">
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Huế
+                                                        </div>
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Onboard
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job-item-bonus">
+                                                    <h5
+                                                        class="job-item-bonus-title">
+                                                        Thưởng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-bonus-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div class="button
+                                                        button--primary">
+                                                        PREMIUM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="job-item">
+                                        <div class="job-item-container
+                                            job-item-disable">
+                                            <div class="job-item-header">
+                                                <div class="job-item-brand">
+                                                    <div class="job-item-image">
+                                                        <img
+                                                            src="./assets/logobond.png"
+                                                            alt="">
+                                                    </div>
+                                                    <h3 class="job-item-name">
+                                                        Junior PHP Developer ~
+                                                        15-2...
+                                                    </h3>
+                                                </div>
+                                                <div class="job-item-time">
+                                                    Full-time
+                                                </div>
+                                            </div>
+
+                                            <div class="job-item-main">
+                                                <div class="job-item-profit">
+                                                    <h5
+                                                        class="job-item-profit-title">
+                                                        Hoa hồng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-profit-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div
+                                                        class="job-item-profit-lists">
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Sài Gòn
+                                                        </div>
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Onboard
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job-item-bonus">
+                                                    <h5
+                                                        class="job-item-bonus-title">
+                                                        Thưởng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-bonus-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div class="button
+                                                        button--primary">
+                                                        PREMIUM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="job-item">
+                                        <div class="job-item-container
+                                            job-item-disable">
+                                            <div class="job-item-header">
+                                                <div class="job-item-brand">
+                                                    <div class="job-item-image">
+                                                        <img
+                                                            src="./assets/logo3.png"
+                                                            alt="">
+                                                    </div>
+                                                    <h3 class="job-item-name">
+                                                        Senior PHP Developer ~
+                                                        Upto 40M
+                                                    </h3>
+                                                </div>
+                                                <div class="job-item-time">
+                                                    Full-time
+                                                </div>
+                                            </div>
+
+                                            <div class="job-item-main">
+                                                <div class="job-item-profit">
+                                                    <h5
+                                                        class="job-item-profit-title">
+                                                        Hoa hồng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-profit-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div
+                                                        class="job-item-profit-lists">
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Hà Nội
+                                                        </div>
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Onboard
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job-item-bonus">
+                                                    <h5
+                                                        class="job-item-bonus-title">
+                                                        Thưởng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-bonus-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div class="button
+                                                        button--primary">
+                                                        PREMIUM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="job-item">
+                                        <div class="job-item-container
+                                            job-item-disable">
+                                            <div class="job-item-header">
+                                                <div class="job-item-brand">
+                                                    <div class="job-item-image">
+                                                        <img
+                                                            src="./assets/logo3.png"
+                                                            alt="">
+                                                    </div>
+                                                    <h3 class="job-item-name">
+                                                        Senior PHP Developer ~
+                                                        Upto 40M
+                                                    </h3>
+                                                </div>
+                                                <div class="job-item-time">
+                                                    Full-time
+                                                </div>
+                                            </div>
+
+                                            <div class="job-item-main">
+                                                <div class="job-item-profit">
+                                                    <h5
+                                                        class="job-item-profit-title">
+                                                        Hoa hồng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-profit-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div
+                                                        class="job-item-profit-lists">
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Hà Nội
+                                                        </div>
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Onboard
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job-item-bonus">
+                                                    <h5
+                                                        class="job-item-bonus-title">
+                                                        Thưởng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-bonus-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div class="button
+                                                        button--primary">
+                                                        PREMIUM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="job-item">
+                                        <div class="job-item-container
+                                            job-item-disable">
+                                            <div class="job-item-header">
+                                                <div class="job-item-brand">
+                                                    <div class="job-item-image">
+                                                        <img
+                                                            src="./assets/logo3.png"
+                                                            alt="">
+                                                    </div>
+                                                    <h3 class="job-item-name">
+                                                        Senior PHP Developer ~
+                                                        Upto 40M
+                                                    </h3>
+                                                </div>
+                                                <div class="job-item-time">
+                                                    Full-time
+                                                </div>
+                                            </div>
+
+                                            <div class="job-item-main">
+                                                <div class="job-item-profit">
+                                                    <h5
+                                                        class="job-item-profit-title">
+                                                        Hoa hồng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-profit-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div
+                                                        class="job-item-profit-lists">
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Hà Nội
+                                                        </div>
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Onboard
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job-item-bonus">
+                                                    <h5
+                                                        class="job-item-bonus-title">
+                                                        Thưởng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-bonus-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div class="button
+                                                        button--primary">
+                                                        PREMIUM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="job-item">
+                                        <div class="job-item-container
+                                            job-item-disable">
+                                            <div class="job-item-header">
+                                                <div class="job-item-brand">
+                                                    <div class="job-item-image">
+                                                        <img
+                                                            src="./assets/logo3.png"
+                                                            alt="">
+                                                    </div>
+                                                    <h3 class="job-item-name">
+                                                        Senior PHP Developer ~
+                                                        Upto 40M
+                                                    </h3>
+                                                </div>
+                                                <div class="job-item-time">
+                                                    Full-time
+                                                </div>
+                                            </div>
+
+                                            <div class="job-item-main">
+                                                <div class="job-item-profit">
+                                                    <h5
+                                                        class="job-item-profit-title">
+                                                        Hoa hồng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-profit-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div
+                                                        class="job-item-profit-lists">
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Hà Nội
+                                                        </div>
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Onboard
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job-item-bonus">
+                                                    <h5
+                                                        class="job-item-bonus-title">
+                                                        Thưởng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-bonus-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div class="button
+                                                        button--primary">
+                                                        PREMIUM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="job-item">
+                                        <div class="job-item-container
+                                            job-item-disable">
+                                            <div class="job-item-header">
+                                                <div class="job-item-brand">
+                                                    <div class="job-item-image">
+                                                        <img
+                                                            src="./assets/logo3.png"
+                                                            alt="">
+                                                    </div>
+                                                    <h3 class="job-item-name">
+                                                        Senior PHP Developer ~
+                                                        Upto 40M
+                                                    </h3>
+                                                </div>
+                                                <div class="job-item-time">
+                                                    Full-time
+                                                </div>
+                                            </div>
+
+                                            <div class="job-item-main">
+                                                <div class="job-item-profit">
+                                                    <h5
+                                                        class="job-item-profit-title">
+                                                        Hoa hồng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-profit-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div
+                                                        class="job-item-profit-lists">
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Hà Nội
+                                                        </div>
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Onboard
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job-item-bonus">
+                                                    <h5
+                                                        class="job-item-bonus-title">
+                                                        Thưởng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-bonus-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div class="button
+                                                        button--primary">
+                                                        PREMIUM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="job-item">
+                                        <div class="job-item-container
+                                            job-item-disable">
+                                            <div class="job-item-header">
+                                                <div class="job-item-brand">
+                                                    <div class="job-item-image">
+                                                        <img
+                                                            src="./assets/logow.png"
+                                                            alt="">
+                                                    </div>
+                                                    <h3 class="job-item-name">
+                                                        Data Engineer
+                                                    </h3>
+                                                </div>
+                                                <div class="job-item-time">
+                                                    Full-time
+                                                </div>
+                                            </div>
+
+                                            <div class="job-item-main">
+                                                <div class="job-item-profit">
+                                                    <h5
+                                                        class="job-item-profit-title">
+                                                        Hoa hồng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-profit-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div
+                                                        class="job-item-profit-lists">
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Hà Nội
+                                                        </div>
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Onboard
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job-item-bonus">
+                                                    <h5
+                                                        class="job-item-bonus-title">
+                                                        Thưởng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-bonus-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div class="button
+                                                        button--primary">
+                                                        PREMIUM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="job-item">
+                                        <div class="job-item-container
+                                            job-item-disable">
+                                            <div class="job-item-header">
+                                                <div class="job-item-brand">
+                                                    <div class="job-item-image">
+                                                        <img
+                                                            src="./assets/logow.png"
+                                                            alt="">
+                                                    </div>
+                                                    <h3 class="job-item-name">
+                                                        Data Engineer
+                                                    </h3>
+                                                </div>
+                                                <div class="job-item-time">
+                                                    Full-time
+                                                </div>
+                                            </div>
+
+                                            <div class="job-item-main">
+                                                <div class="job-item-profit">
+                                                    <h5
+                                                        class="job-item-profit-title">
+                                                        Hoa hồng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-profit-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div
+                                                        class="job-item-profit-lists">
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Hà Nội
+                                                        </div>
+                                                        <div
+                                                            class="job-item-profit-tag">
+                                                            Onboard
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="job-item-bonus">
+                                                    <h5
+                                                        class="job-item-bonus-title">
+                                                        Thưởng
+                                                    </h5>
+                                                    <div
+                                                        class="job-item-bonus-price">
+                                                        12,000,000 <span
+                                                            class="unit">VNĐ</span>
+                                                    </div>
+                                                    <div class="button
+                                                        button--primary">
+                                                        PREMIUM
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="infor">
+                    <div class="container">
+                        <div class="infor-container">
+                            <h3 class="infor-title">
+                                Tại Sao Lựa Chọn RecLand?
+                            </h3>
+                            <ul class="infor-lists">
+                                <li class="infor-item">
+                                    <img srcset="./assets/infor-logo.png 2x"
+                                        alt="logo">
+                                    <h4 class="infor-item-title">
+                                        Đa dạng việc làm, thêm nhiều lựa chọn
+                                        hấp dẫn
+                                    </h4>
+                                    <p class="infor-item-text">
+                                        Hơn 200+ việc làm IT, giúp các bạn REC
+                                        có một kho việc làm để các bạn tìm kiếm,
+                                        sale jobs đến những ứng viên phù hợp.
+                                    </p>
+                                </li>
+                                <li class="infor-item">
+                                    <img srcset="./assets/Dollar.png 2x"
+                                        alt="logo">
+                                    <h4 class="infor-item-title">
+                                        Cơ chế hoa hồng hấp dẫn, rõ ràng và minh
+                                        bạch
+                                    </h4>
+                                    <p class="infor-item-text">
+                                        RecLand đem đến cho các bạn REC mức hoa
+                                        hồng hấp dẫn, giúp cho các bạn REC có
+                                        được mức thu nhập tương xứng mà không
+                                        cần đến công ty làm việc
+                                    </p>
+                                </li>
+                                <li class="infor-item">
+                                    <img srcset="./assets/Network.png 2x"
+                                        alt="logo">
+                                    <h4 class="infor-item-title">
+                                        Mở rộng network và học hỏi từ cộng đồng
+                                    </h4>
+                                    <p class="infor-item-text">
+                                        RecLand cũng thường xuyên tổ chức những
+                                        buổi chia sẻ, buổi offline nhằm giúp các
+                                        bạn REC trau dồi, học hỏi và mở rộng
+                                        được network trong lĩnh vực tuyển dụng.
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="partner">
+                    <div class="container">
+                        <div class="partner-container">
+                            <div class="partner-title">
+                                Đối Tác
+                            </div>
+
+                            <ul class="partner-list">
+                                <li class="partner-item">
+                                    <img srcset="./assets/MU.png 2x" alt="">
+                                </li>
+                                <li class="partner-item">
+                                    <img srcset="./assets/M.png 2x" alt="">
+                                </li>
+                                <li class="partner-item">
+                                    <img srcset="./assets/W.png 2x" alt="">
+                                </li>
+                                <li class="partner-item">
+                                    <img srcset="./assets/FENDI.png 2x" alt="">
+                                </li>
+                                <li class="partner-item">
+                                    <img srcset="./assets/MU.png 2x" alt="">
+                                </li>
+                                <li class="partner-item">
+                                    <img srcset="./assets/MU.png 2x" alt="">
+                                </li>
+                                <li class="partner-item">
+                                    <img srcset="./assets/MU.png 2x" alt="">
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </section>
+                <section class="progress">
+                    <div class="container">
+                        <div class="progress-container">
+                            
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+    </body>
+</html>
+<script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+<script src="./js/index.js"></script>
