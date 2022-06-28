@@ -1,0 +1,71 @@
+.footer {
+    &-container {
+        display: flex;
+        justify-content: space-between;
+
+        flex-direction: row;
+    }
+
+    &-address,
+    &-contact,
+    &-menu,
+    &-acounts {
+        &-title {
+            font-weight: 700;
+            font-size: 18px;
+            @include color-custom(linear-gradient(0deg, #021A84, #021A84),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)));
+            margin-bottom: 4px;
+        }
+
+        &-text {
+            max-width: 242px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: calc(28/18);
+            color: #999999;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 4px 0px;
+
+        }
+
+        &-item {
+            a {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: calc(28/18);
+                color: #999999;
+            }
+        }
+    }
+
+    &-logo {
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        &-recland {
+            position: relative;
+            z-index: 0;
+            margin-bottom: 18px;
+
+            &::before {
+                width: 190.43px;
+                content: "";
+                position: absolute;
+                border: 1px solid rgba(229, 229, 229, 1);
+                z-index: 1;
+                top: 45px;
+
+            }
+        }
+    }
+}
