@@ -21,6 +21,7 @@ a {
 .container {
   max-width: 1160px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 body {
@@ -51,16 +52,18 @@ body {
 }
 
 .header {
+  z-index: 10000;
   position: fixed;
   top: 0;
-  width: 100%;
   background: white;
+  padding: 20px 0;
+  width: 100%;
+  right: 0;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
 }
 .header-job {
   font-weight: 500;
@@ -85,6 +88,42 @@ body {
   position: absolute;
 }
 
+@media screen and (max-width: 693px) {
+  .header {
+    padding: 5px 0px;
+  }
+  .header .button {
+    width: 100px;
+    padding: 0;
+  }
+  .header-container {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .header-job {
+    font-size: 13px;
+  }
+  .header-logo {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+  .header-auth {
+    gap: 0 4px;
+  }
+  .header-auth .button {
+    border: none;
+    font-size: 13px;
+    width: 80px;
+    margin-right: 0;
+  }
+  .header-auth .button--rounded::after {
+    right: 4px;
+  }
+  .header-auth .button--primary {
+    height: 20px;
+  }
+}
 .banner {
   margin-top: 80px;
   margin-bottom: 52px;
@@ -95,6 +134,7 @@ body {
 }
 
 .search {
+  display: none;
   margin-bottom: 90px;
 }
 .search-container {
@@ -181,7 +221,7 @@ body {
   gap: 0 9px;
 }
 .job-image > img {
-  width: 67px;
+  max-width: 67px;
   align-items: center;
 }
 .job-title {
@@ -200,7 +240,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 365.33px;
+  max-width: 365.33px;
   height: 156px;
   background: #FFFFFF;
   border: 1px solid white;
@@ -313,6 +353,14 @@ body {
   border: none;
 }
 
+@media screen and (max-width: 374.98px) {
+  .job-container {
+    align-items: center;
+  }
+  .job-item-container {
+    width: 300px;
+  }
+}
 .infor {
   margin-bottom: 80px;
 }
@@ -329,6 +377,7 @@ body {
   font-weight: 700;
   font-size: 34px;
   margin-bottom: 40px;
+  text-align: center;
 }
 .infor-lists {
   display: flex;
@@ -336,7 +385,8 @@ body {
   align-items: center;
   flex-direction: row;
   text-align: center;
-  gap: 0 32px;
+  gap: 15px 32px;
+  flex-wrap: wrap;
 }
 .infor-item {
   max-width: 365.33px;
@@ -386,6 +436,7 @@ body {
 }
 
 .partner {
+  display: none;
   margin-bottom: 80px;
 }
 .partner-container {
@@ -482,7 +533,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 100px;
+  gap: 10px 100px;
+  flex-wrap: wrap;
 }
 .progress .guide-item {
   text-align: center;
@@ -600,10 +652,23 @@ body {
   font-size: 14px;
 }
 
+.footer {
+  margin-bottom: 40px;
+}
+.footer-coppyright {
+  padding: 40px 157px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  color: #999999;
+}
 .footer-container {
+  flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dddbdb;
 }
 .footer-address-title, .footer-contact-title, .footer-menu-title, .footer-acounts-title {
   font-weight: 700;

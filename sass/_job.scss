@@ -4,6 +4,7 @@
     &-container {
         display: flex;
         flex-direction: column;
+        
     }
 
     // job-header
@@ -16,7 +17,7 @@
 
     &-image {
         >img {
-            width: 67px;
+            max-width: 67px;
             align-items: center;
         }
     }
@@ -44,7 +45,7 @@
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                width: 365.33px;
+                max-width: 365.33px;
                 height: 156px;
                 background: #FFFFFF;
                 border: 1px solid white ;
@@ -190,4 +191,17 @@
         border: none;
     }
 
+}
+@media screen and (max-width: 374.98px) {
+    .job {
+        &-container {
+            align-items: center;
+        }
+        &-item{
+            &-container {
+                width: 300px;
+            }
+           
+        }
+    }
 }

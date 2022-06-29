@@ -1,16 +1,21 @@
 .header {
     // background-color: $heading-bg;
+    z-index: 10000;
     position: fixed;
     top: 0;
-    width: 100%;
     background: white;
-    
+    padding: 20px 0;
+    width: 100%;
+    right: 0;
+
+
     &-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        // max-width: 1170px;
+        // height: 80px;
 
-        height: 80px;
 
     }
 
@@ -40,5 +45,53 @@
         right: -14px;
         position: absolute;
 
+    }
+}
+
+@media screen and (max-width: 693px) {
+    .header {
+        padding: 5px 0px;
+
+        .button {
+            width: 100px;
+            padding: 0;
+        }
+
+        &-container {
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &-job {
+            font-size: 13px;
+
+        }
+
+        &-logo {
+            order: 2;
+
+            width: 100%;
+            text-align: center;
+
+        }
+
+        &-auth {
+            gap: 0 4px;
+
+            .button {
+                border: none;
+                font-size: 13px;
+                width: 80px;
+                margin-right: 0;
+            }
+
+            .button--rounded::after {
+                right: 4px;
+            }
+
+            .button--primary {
+                height: 20px;
+            }
+        }
     }
 }
