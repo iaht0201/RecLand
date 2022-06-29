@@ -1,5 +1,5 @@
 .partner {
-    display: none;
+  
     margin-bottom: 80px;
     &-container {
         display: flex;
@@ -23,8 +23,8 @@
         display: flex;
         align-items: center;
         gap: 76px;
-        // display: grid;
-        // grid-template-columns: repeat(5, minmax(156px, 1fr));
+        display: grid;
+        grid-template-columns: repeat(5, minmax(70px, 1fr));
 
 
     }
@@ -88,5 +88,25 @@
             border: 2px solid rgba(196, 196, 196, 1);
             ;
         }
+    }
+}
+@media screen and (max-width: 1279.98px) {
+    .slick-slider {
+        left: -55px;
+    }
+    .partner {
+        &-list {
+            gap: 10px;
+        }
+    }
+    .slick-dots {
+        left: 55px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 374.98px) {
+    .slick-slider {
+        left: -55px;
     }
 }

@@ -24,7 +24,7 @@
         flex-direction: row;
         text-align: center;
         gap: 15px 32px;
-        flex-wrap: wrap;
+      
     }
 
     &-item {
@@ -78,5 +78,10 @@
             font-size: 14px;
             height: calc(20/14);
         }
+    }
+}
+@media screen and (max-width: 910px) {
+    .infor-lists  {
+        flex-wrap: wrap;
     }
 }

@@ -177,7 +177,7 @@
 
     &-lists {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(365px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
         gap: 32px;
     }
     .ui-selected {
@@ -192,10 +192,34 @@
     }
 
 }
+@media screen and (max-width: 1050px) {
+    .job {
+     
+        &-container {
+          
+        }
+    }
+}
+@media screen and (max-width: 790px) {
+    .job {
+        &-header {
+            margin-bottom: 20px;
+        }
+        &-lists {
+           width: 328px;
+            margin: 0 auto;
+        }
+    }
+}
+
 @media screen and (max-width: 374.98px) {
     .job {
+      
         &-container {
             align-items: center;
+        }
+        &-lists {
+            // width: 300px !important;
         }
         &-item{
             &-container {
@@ -204,4 +228,7 @@
            
         }
     }
+}
+.ui-selectable {
+    touch-action: auto !important;
 }

@@ -60,3 +60,44 @@
     }
 
 }
+
+@media screen and (max-width: 715px) {
+    .intro {
+        &-container {
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0;
+           
+        }
+        &-right{
+            &-container {
+                background: none;
+            }
+        }
+      
+        
+    }
+}
+@media screen and (max-width:441px) {
+    .intro-container {
+        height: 265px;
+    }
+    .intro {
+        &-container {
+            text-align: center;
+           
+        }
+        &-left {
+            display: flex;
+            flex-direction: column;
+        }
+        &-text {
+            
+        }
+        &-title {
+            font-size: 20px;
+        }
+    }
+
+}
