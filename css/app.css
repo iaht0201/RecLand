@@ -48,7 +48,7 @@ body {
 }
 .button--rounded {
   border: 1px solid #021A84;
-  color: #021a84;
+  color: rgb(2, 26, 132);
   background: transparent;
 }
 
@@ -75,7 +75,7 @@ body {
   align-items: center;
   display: flex;
   gap: 0 14px;
-  color: #171717;
+  color: black;
 }
 .header .button--rounded {
   margin-right: 14px;
@@ -145,7 +145,6 @@ body {
   }
 }
 .search {
-  display: none;
   margin-bottom: 90px;
 }
 .search-container {
@@ -153,6 +152,14 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 26px;
+}
+.search-key {
+  position: relative;
+}
+.search-key img {
+  position: absolute;
+  top: 15.5px;
+  left: 18px;
 }
 .search-key .search-input {
   width: 672px;
@@ -165,12 +172,19 @@ body {
   background: white;
   border-radius: 8px;
   backdrop-filter: blur(4px);
+  padding-left: 46px;
 }
 .search-key .search-input:focus-visible {
   outline: none;
 }
 .search-location {
+  position: relative;
   /*for IE10+*/
+}
+.search-location img {
+  position: absolute;
+  top: 13px;
+  left: 0;
 }
 .search-location #location {
   border-radius: 8px;
@@ -182,9 +196,10 @@ body {
   padding: 0 32px 0 44px;
 }
 .search-location #location:focus-visible {
-  outline: none;
+  outline: 0;
 }
 .search-location select {
+  position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -193,10 +208,11 @@ body {
 .search-location select::-ms-expand {
   padding: 80px;
 }
-.search-location #location > option {
+.search-location option li {
+  background-color: yellow;
+}
+.search-location select {
   outline: none;
-  height: 50px;
-  border-radius: 8px;
 }
 
 .category-container {
@@ -217,6 +233,15 @@ body {
 }
 .category-tag a {
   color: #021A84;
+}
+
+.location-list {
+  display: none;
+  background: white;
+  padding: 10px;
+}
+.location .select-hide {
+  display: none;
 }
 
 .job {
@@ -252,7 +277,7 @@ body {
   align-items: center;
   flex-direction: column;
   max-width: 365.33px;
-  height: 156px;
+  height: 180px;
   background: #FFFFFF;
   border: 1px solid white;
   box-shadow: 0px 16px 50px rgba(0, 0, 0, 0.08);
@@ -277,6 +302,7 @@ body {
   height: 32px;
 }
 .job .job-main .job-item-name {
+  line-height: 1;
   font-weight: 500;
   font-size: 16px;
   color: #171717;
@@ -413,7 +439,6 @@ body {
 }
 .infor-item {
   max-width: 365.33px;
-  height: 278px;
   padding: 32px;
   border-radius: 16px;
 }
@@ -443,7 +468,7 @@ body {
 }
 .infor-item:last-child .infor-item-title,
 .infor-item:last-child .infor-item-text {
-  background: #e5532a;
+  background: rgb(229, 83, 42);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -528,18 +553,16 @@ body {
   border-radius: 50%;
   width: 15px;
   height: 15px;
-  border: 2px solid #c4c4c4;
+  border: 2px solid rgb(196, 196, 196);
 }
 
 @media screen and (max-width: 1279.98px) {
   .slick-slider {
     left: -55px;
   }
-
   .partner-list {
     gap: 10px;
   }
-
   .slick-dots {
     left: 55px;
     position: relative;
@@ -560,7 +583,7 @@ body {
   flex-direction: column;
 }
 .progress-title {
-  color: #021a84;
+  color: rgb(2, 26, 132);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5555555556;
@@ -590,7 +613,7 @@ body {
 .progress .guide-title {
   font-weight: 700;
   font-size: 18px;
-  color: #171717;
+  color: rgb(23, 23, 23);
   margin-bottom: 8px;
 }
 .progress .guide-text {
@@ -672,7 +695,6 @@ body {
   .intro-container {
     height: 265px;
   }
-
   .intro-container {
     text-align: center;
   }
@@ -744,7 +766,7 @@ body {
   text-align: center;
   font-weight: 400;
   font-size: 18px;
-  color: #999999;
+  color: rgb(153, 153, 153);
 }
 .footer-container {
   flex-wrap: wrap;
@@ -752,7 +774,7 @@ body {
   justify-content: space-between;
   flex-direction: row;
   padding-bottom: 40px;
-  border-bottom: 1px solid #dddbdb;
+  border-bottom: 1px solid rgb(221, 219, 219);
 }
 .footer-address-title, .footer-contact-title, .footer-menu-title, .footer-acounts-title {
   font-weight: 700;
@@ -794,7 +816,7 @@ body {
   width: 190.43px;
   content: "";
   position: absolute;
-  border: 1px solid #e5e5e5;
+  border: 1px solid rgb(229, 229, 229);
   z-index: 1;
   top: 45px;
 }

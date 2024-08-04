@@ -1,6 +1,7 @@
 .search {
-    display: none;
+    // display: none;
     margin-bottom: 90px;
+
     &-container {
         display: flex;
         justify-content: space-between;
@@ -9,6 +10,14 @@
     }
 
     &-key {
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 15.5px;
+            left: 18px;
+        }
+
         .search-input {
             width: 672px;
             height: 51px;
@@ -20,6 +29,7 @@
             background: white;
             border-radius: 8px;
             backdrop-filter: blur(4px);
+            padding-left: 46px;
         }
 
         .search-input:focus-visible {
@@ -29,6 +39,16 @@
     }
 
     &-location {
+        position: relative;
+  
+
+        img {
+            position: absolute;
+            top: 13px;
+            left: 0;
+
+        }
+
         #location {
             border-radius: 8px;
             height: 50px;
@@ -40,10 +60,13 @@
         }
 
         #location:focus-visible {
-            outline: none;
+            outline: 0;
+ 
         }
 
         select {
+            
+            position: absolute;
 
             -webkit-appearance: none;
             -moz-appearance: none;
@@ -58,12 +81,24 @@
             padding: 80px;
         }
 
-        #location>option {
+        // #location>option {
+        //     outline: none;
+        //     height: 50px;
+        //     border-radius: 8px;
+        //     border: none;
+
+        // }
+        option {
+
+
+
+            li {
+                background-color: yellow;
+            }
+        }
+
+        select {
             outline: none;
-
-            height: 50px;
-            border-radius: 8px;
-
         }
     }
 }
@@ -92,5 +127,17 @@
         a {
             color: #021A84;
         }
+    }
+}
+
+.location {
+    &-list {
+        display: none;
+        background: white;
+        padding: 10px;
+    }
+
+    .select-hide {
+        display: none;
     }
 }

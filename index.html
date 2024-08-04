@@ -56,16 +56,46 @@
                     <div class="container">
                         <div class="search-container">
                             <div class="search-key">
+
                                 <input type="text" class="search-input"
                                     placeholder="Nhập vị trí hoặc từ khóa ...">
+                                <img srcset="./assets/search-normal.png 2x"
+                                    alt="">
                             </div>
                             <div class="search-location">
-                                <select name="location" id="location">
+
+                                <!-- <select name="location" id="location">
                                     <option value="">Chọn địa điểm</option>
                                     <option value="hanoi">Hà Nội</option>
                                     <option value="hcm">Hồ Chí Minh</option>
                                     <option value="hue">Huế</option>
-                                </select>
+                                </select> -->
+                                <div class="location" id="loaction">
+                                    <!-- <div class="location-search">
+                                        <input type="text" class="location-result" >
+                                        <img srcset="./assets/row.png 2x"
+                                            alt="" class="select-show">
+                                        <img srcset="./assets/row.png 2x"
+                                            alt="" class="select-hide" style="transform: rotate(180deg) ; margin-left: 30px; ">
+                                    </div> -->
+
+                                    <ul class="location-list">
+                                        <li class="location-item">
+                                            Chọn địa điểm
+                                        </li>
+                                        <li class="location-item">
+                                            Huế
+                                        </li>
+                                        <li class="location-item">
+                                            Hồ Chí Minh
+                                        </li>
+                                        <li class="location-item">
+                                            Hà Nội
+                                        </li>
+                                    </ul>
+
+                                </div>
+
                             </div>
                             <div class="search-button button button--primary">
                                 Tìm kiếm
